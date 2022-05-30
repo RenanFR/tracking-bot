@@ -1,5 +1,5 @@
-discordToken: OTc5NzM5MzA2ODY2MzkzMTQ4.G1SLmU.K4owlPKtNvNyrmBIIWuhVYNdvLUIzBypT2RPBs
-discordApplicationId: 979739306866393148
+server:
+  port : 8081
 spring:
   main:
     allow-bean-definition-overriding: true    

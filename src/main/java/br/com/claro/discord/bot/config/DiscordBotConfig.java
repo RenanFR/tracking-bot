@@ -20,7 +20,7 @@ import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 @Configuration
 public class DiscordBotConfig {
 
-	@Value("${discordToken}")
+	@Value("${discord.token}")
 	private String discordToken;
 
 	@Value("${discordApplicationId}")
