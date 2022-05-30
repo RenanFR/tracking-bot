@@ -1,4 +1,5 @@
 discordToken: OTc5NzM5MzA2ODY2MzkzMTQ4.G1SLmU.K4owlPKtNvNyrmBIIWuhVYNdvLUIzBypT2RPBs
-logging:
-  level:
-    org.springframework.beans.factory: TRACE
+discordApplicationId: 979739306866393148
+#logging:
+#  level:
+#    org.springframework.beans.factory: TRACE

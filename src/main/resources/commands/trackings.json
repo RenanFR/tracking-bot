@@ -1,0 +1,18 @@
+{
+    "name": "trackings",
+    "description": "Recupera os trackings para o período selecionado",
+    "options": [
+        {
+            "name": "inicio",
+            "description": "Periodo de inicio",
+            "type": 3,
+            "required": true
+        },
+        {
+            "name": "fim",
+            "description": "Periodo de fim",
+            "type": 3,
+            "required": true
+        }
+    ]
+}
