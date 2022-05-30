@@ -1,5 +1,23 @@
 discordToken: OTc5NzM5MzA2ODY2MzkzMTQ4.G1SLmU.K4owlPKtNvNyrmBIIWuhVYNdvLUIzBypT2RPBs
 discordApplicationId: 979739306866393148
-#logging:
-#  level:
-#    org.springframework.beans.factory: TRACE
+spring:
+  main:
+    allow-bean-definition-overriding: true    
+  liquibase: 
+    enabled: false
+cloud:
+  aws:
+    stack.auto: false
+    region:
+      static: eu-central-1
+blip:
+  url: https://claro.http.msging.net
+aws:
+  sqs:
+    serviceEndpoint: http://localhost:4566
+    signingRegion: eu-central-1
+    accessKey: foo
+    secretKey: bar
+discord:
+  channelId: 980498952946339890
+  inviteLink: https://discord.com/api/oauth2/authorize?client_id=979739306866393148&permissions=380104621072&scope=applications.commands%20bot

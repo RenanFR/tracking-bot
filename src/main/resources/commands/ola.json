@@ -1,0 +1,12 @@
+{
+    "name": "ola",
+    "description": "Te dá um olá de teste",
+    "options": [
+        {
+            "name": "nome",
+            "description": "Seu nome",
+            "type": 3,
+            "required": true
+        }
+    ]
+}

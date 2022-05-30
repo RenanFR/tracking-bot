@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 import br.com.claro.discord.bot.commands.Command;
 import discord4j.core.DiscordClientBuilder;
@@ -26,6 +27,7 @@ public class DiscordBotConfig {
 	private long discordApplicationId;
 
 	@Bean
+	@Primary
 	public <T extends Event> GatewayDiscordClient gatewayDiscordClient(
 			@Autowired Map<String, Command> commandHandlersMap) {
 		GatewayDiscordClient client = DiscordClientBuilder.create(discordToken).build().login().block();
@@ -46,7 +48,7 @@ public class DiscordBotConfig {
 			throws IOException {
 		GlobalCommandRegistrar globalCommandRegistrar = new GlobalCommandRegistrar(
 				gatewayDiscordClient.getRestClient());
-		globalCommandRegistrar.registerCommands(List.of("trackings.json"));
+		globalCommandRegistrar.registerCommands(List.of("trackings.json", "ola.json"));
 		return globalCommandRegistrar;
 
 	}

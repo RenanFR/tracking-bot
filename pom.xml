@@ -34,6 +34,11 @@
 			<artifactId>discord4j-core</artifactId>
 			<version>3.2.2</version>
 		</dependency>
+		<dependency>
+			<groupId>br.com.claro.whatsapp</groupId>
+			<artifactId>tracking-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
